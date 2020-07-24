@@ -24,6 +24,7 @@ const handleFormSubmit = function(e) {
     this.reset();
 };
 
-const handleDeleteAllClick = function(e) {
-
+const handleDeleteAllClick = function() {
+    const list = document.querySelector('#to-do-list');
+    list.innerHTML = '';
 }
