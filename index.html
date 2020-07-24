@@ -8,6 +8,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1>To-Do List</h1>
+
+    <form id="new-task-form">
+
+        <div class="form-item">
+            <label for="task" id="task">Task (task description):</label>
+            <input type="text" id="task">
+        </div>
+        <div class="form-item">
+            <label for="task-type" id="task-type">Task Type (cleaning, shopping, work-related?):</label>
+            <input type="text" id="task-type">
+        </div>
+        <div class="form-item">
+            <label for="task-priority" id="task-priority">Priority:</label>
+            <input type="radio" id="task-priority" name="task-priority" value="Must-do"> Must do
+            <input type="radio" id="task-priority" name="task-priority" value="Should-do"> Should do
+            <input type="radio" id="task-priority" name="task-priority" value="Could-do"> Could do
+        </div>
+
+        <div id="form-buttons">
+            <button type="submit" value="add-task">Add Task</button>
+            <button type="button" value="delete-all">Delete All</button>
+        </div>
+
+    </form>
+
+    <div id="to-do-list-div">
+        <h3>Tasks</h3>
+        <ul id="to-do-list"></ul>
+    </div>
 </body>
 </html>
