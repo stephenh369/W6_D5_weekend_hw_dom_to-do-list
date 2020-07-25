@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+#new-task-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.form-item {
+    padding: 0.5rem;
+}
+
+#to-do-list-div {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#to-do-list {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 1rem;
+    list-style: none;
+}
+
+.list-item {
+    line-height: 1.75rem;
+    overflow-wrap: break-word;
+    width: 75%;
+}
+

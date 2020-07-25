@@ -24,7 +24,7 @@ const handleFormSubmit = function(e) {
     let deleteItem = document.createElement('button');
 
     // TEXT DISPLAYED IN LI ITEM
-    listItem.textContent = `Task: ${task} Type: ${type} Priority: ${priority}`;
+    listItem.innerText = `Task: ${task}\n Type: ${type}\n Priority: ${priority}\n`;
     
     // DELETE BUTTON TEXT
     deleteItem.innerHTML = "Delete";
