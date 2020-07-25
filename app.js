@@ -17,9 +17,14 @@ const handleFormSubmit = function(e) {
     const priority = this.priority.value;
     const list = document.querySelector('#to-do-list');
     const listItem = document.createElement('li');
+    const deleteItem = document.createElement('button');
 
     listItem.textContent = `Task: ${task} Type: ${type} Priority: ${priority}`;
+    deleteItem.innerHTML = "Delete";
     list.appendChild(listItem);
+    listItem.appendChild(deleteItem);
+    deleteItem.setAttribute('id', 'delete-item');
+
 
     this.reset();
 };
