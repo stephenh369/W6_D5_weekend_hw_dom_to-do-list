@@ -1,17 +1,30 @@
 * {
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
+body {
+    background-color: #227C9D;
+}
+
+
+h1, h3 {
     text-align: center;
+    color: white;
 }
 
 #new-task-form {
+    background-color: #2C9FC9;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 8px;
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    
     
 }
 .form-item {
@@ -19,7 +32,7 @@ h1 {
 }
 
 #to-do-list-div {
-    margin-top: 2rem;
+    margin-top: 1.75rem;
     text-align: center;
 }
 
@@ -35,5 +48,44 @@ h1 {
     line-height: 1.75rem;
     overflow-wrap: break-word;
     width: 75%;
+    background-color: #2C9FC9;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+
+#add-task {
+    background-color: #17C3B2;
+    padding: 5px;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+#add-task:hover {
+    background-color: #24E5D2;
+    color: #FEF9EF;
+}
+#add-task::after {
+    font-family: 'Font Awesome 5 free';
+    content: ' ';
+}
+
+
+#delete-all, .delete-item {
+    background-color: #CB0108;
+    padding: 5px;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+#delete-all:hover, .delete-item:hover {
+    background-color: #F40109;
+    color: #FEF9EF;
+}
+#delete-all::after {
+    font-family: 'Font Awesome 5 free';
+    content: ' ';
+}
+.delete-item::after {
+    font-family: 'Font Awesome 5 free';
+    content: ' ';
 }
 
